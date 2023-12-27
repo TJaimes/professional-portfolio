@@ -2,7 +2,6 @@ import { useState, handleDownload } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import { FileEarmarkArrowDownFill } from "react-bootstrap-icons";
-import meLogo from "../assets/img/meLogo2.png";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
@@ -12,8 +11,8 @@ export const Footer = () => {
             e.preventDefault();
 
             const link = document.createElement('a');
-            link.href = process.env.PUBLIC_URL + '/Fotografico.pdf';
-            link.download = 'CV-Tairi Jaimes.pdf';
+            link.href = process.env.PUBLIC_URL + '/CV-TairiJaimes.pdf';
+            link.download = 'CV-TairiJaimes.pdf';
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
