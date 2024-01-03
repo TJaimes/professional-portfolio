@@ -19,7 +19,7 @@ export const Footer = () => {
         };
 
     return (
-        <footer className="footer">
+        <footer className="footer" id="footer">
             <Row className="align-item-center">
                 <Col sm={4} md={4}>
                     <div className="foot-txtx">
