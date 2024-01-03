@@ -36,9 +36,9 @@ export const Projects = () => {
             txtImg2: "Web API developed for the control system."
         },
         {
-            title: "Herbal Web Page",
-            date: "August 2022 - December 2023",
-            par1: "The development of this web page was a great project where I learn a lot because it was my first time talking with a client about what he really wants to made and saw how this requests came true. ",
+            title: "Naturist Web Page",
+            date: "August 2021 - December 2021",
+            par1: "The development of this web page was a great project where I learn a lot because it was my first time talking with a client about what he really wants to made and saw how this requests came true. The use for this web page was to schedule appointments and buy alternative medicines.",
             par2: "I participate as a fullstack developer but with most participate in the frontend. In the frontend I developed all the desing, keeping in mind what the client wants, like the colors and general desing, but always adding my knowledge to improve the user experience and desing. ",
             par3: "In the backend I design the database that we will need for the web page, I configured all the comunication between the web page and the database and I managed the database.",
             imgLogo: projImg3
