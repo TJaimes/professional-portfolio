@@ -58,6 +58,9 @@ export const Footer = () => {
                         </div>
                     </Col>
             </Row>
+            <Row>
+                <p>Developed with React</p>
+            </Row>
         </footer>
     )
 }
