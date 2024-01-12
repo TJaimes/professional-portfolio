@@ -129,7 +129,6 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     justify-content: center;
     line-height: 1;
     border: 1px solid rgba(255, 255, 255, 0.5);
-    color: #ffffff
 }
 .social-icon a::before {
     content: "";
@@ -240,7 +239,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 .skill {
   padding: 0 0 100px 0;
   position: relative;
-  background-color: #723D46;
+  background-color: #b3c5d7
 }
 
 .skill-bx {
@@ -318,7 +317,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #C9CBA3 -5.91%, #E26D5C 111.58%);
+  background: linear-gradient(90.21deg, #e7ecef -5.91%, #6096ba 111.58%);
   opacity: 0.85;
   position: absolute;
   width: 100%;
@@ -353,6 +352,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 }
 
 .proj-txt-img h1{
+  color: #000;
   font-size: 16px;
 }
 
@@ -365,7 +365,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 .proj-txtx h4 {
   font-size: 30px;
   font-weight: 700;
-  color: #723D46;
+  color: #6096BA;
 }
 
 .proj-txtx h3{
@@ -468,13 +468,18 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   background-repeat: no-repeat;
 }
 
+.footer p{
+  color: #B8B8B8;
+  width: 90%;
+  text-align: right;
+  font-style: italic;
+}
 .footer h1{
-  font-size: 35px;
+	font-weight: 700;
 }
 
 .footer button {
   color: #fff;
-  font-weight: bold;
   font-size: 20px;
   margin-top: 10px;
   letter-spacing: 0.8px;
