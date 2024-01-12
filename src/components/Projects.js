@@ -36,8 +36,17 @@ export const Projects = () => {
             txtImg2: "Web API developed for the control system."
         },
         {
+            title: "Production Control System",
+            date: "April 2022 - June 2022",
+            par1: `The challenge fot this project was to create a system in which production orders could be initiated, wich would consist of a series of steps to follow in order to have a better control over the production of snacks, thus having a better 
+            management of the raw material, the orders already created and the pending ones, thus reducing waste and production time.`,
+            par2: "My role in the team was as a frontend developer, where I designed the UI and UX, based on the client's needs and business colorimetry.",
+            par3: "In this project I used the Laravel Framework for the first time, so my approach to the MCV design pattern was greater.",
+            imgLogo: logoNaturist
+        },
+        {
             title: "Naturist Web Page",
-            date: "August 2021 - December 2021",
+            date: "August 2020 - December 2020",
             par1: "Proyect that consisted in developing a website for a herbalist's office where clients can make appointments and buy medicines.",
             par2: "Developing this website was a great project where I learn a lot because it was the first time I talked to a client about what they really wanted and saw how those wishes came true.",
             par3: `I'm involved as a fullstack developer, but most of my works is in the frontend. In the frontend I developed all the design, keeping in mind what the client wants, like the colors and general design, but always adding my knowledge 
