@@ -60,7 +60,7 @@ export const Projects = () => {
             <Container>
                 <Row>
                     <Col size={12}>
-                    <h2>My Projects</h2>
+                    <h2>Projects</h2>
                     <p>I'm a FullStack Developer who has participated in various projects with diverse needs. I have experience in both areas of software development, coding the user experience in the frontend and developing the tasks behind these interactions in the web API's and databases in the backend</p>
                     <Row>
                         {
