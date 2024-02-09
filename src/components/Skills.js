@@ -1,6 +1,9 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Carousel from "react-multi-carousel"
 import "react-multi-carousel/lib/styles.css"
+import jsLogo from "../assets/img/jsLogo.png"
+import csharpLogo from "../assets/img/csharpLogo.png"
+import javaLogo from "../assets/img/javaLogo.png"
 import meter70Int from "../assets/img/meter70Int.png"
 import meter90Adv from "../assets/img/meter90Adv.png"
 import meter57Int from "../assets/img/meter57Int.png"
@@ -32,22 +35,18 @@ export const Skills = () => {
             <Container>
                 <Row>
                     <Col>
-                    <div className="skill-bx">
-                        <h2>Skills</h2>
+                    <h2>Skills</h2>
                         <p>Since I started my career and until now I have a professional job, I learned differents languages, tools and frameworks.</p>
                         <Carousel responsive={responsive} infinite={true} className="skill-slider">
 
                             <div className="item">
-                                <img src={meter90Adv} alt="Image Item1" />
-                                <h5>Java</h5>
+                                <img src={csharpLogo} alt="Image Item1" />
                             </div>
                             <div className="item">
-                                <img src={meter70Int} alt="Image Item2" />
-                                <h5>C#</h5>
+                                <img src={jsLogo} alt="Image Item2" />
                             </div>
                             <div className="item">
-                                <img src={meter57Int} alt="Image Item3" />
-                                <h5>Java Script</h5>
+                                <img src={javaLogo} alt="Image Item3" />
                             </div>
                             <div className="item">
                                 <img src={meter57Int} alt="Image Item3" />
@@ -76,7 +75,6 @@ export const Skills = () => {
                                 <h5>Git - version control</h5>
                             </div>
                         </Carousel>
-                    </div>
                     </Col>
                 </Row>
             </Container>
