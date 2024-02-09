@@ -26,12 +26,12 @@ export const ProjectCard = ({ title, date, corp, par1, par2, par3, imgLogo, img1
     return (
         <section className="proj-row">
             <Row>
-                <Col sm={2} md={2}>
+                <Col sm={1} md={1}>
                     <div className="proj-imgbx-logo">
                         <img src={imgLogo} alt="Logo image" />
                     </div>
                 </Col>
-                <Col sm={10} md={10}>
+                <Col sm={11} md={11}>
                     <div className="proj-txtx">
                         <h4>{title}</h4>
                         <h3>{date}</h3>
