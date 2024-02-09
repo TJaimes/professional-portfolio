@@ -6,7 +6,7 @@ import projImgCima2 from "../assets/img/projectCima2.png";
 import projImgSicar from "../assets/img/projectSicar.png";
 import projImgSicar2 from "../assets/img/projectSicarApi.png";
 import logoNaturist from "../assets/img/projectNaturist.jpg";
-
+import logoFricos from "../assets/img/projectFricos.jpg";
 export const Projects = () => {
     const projects = [
         {
@@ -51,7 +51,7 @@ export const Projects = () => {
             par2: "Developing this website was a great project where I learn a lot because it was the first time I talked to a client about what they really wanted and saw how those wishes came true.",
             par3: `I'm involved as a fullstack developer, but most of my works is in the frontend. In the frontend I developed all the design, keeping in mind what the client wants, like the colors and general design, but always adding my knowledge 
             to improve the user experience and design. In the backend I design the database we beed for the website, I configure all the communication between the website and the database and I manage the database.`,
-            imgLogo: logoNaturist
+            imgLogo: logoFricos
         }
     ];
 
