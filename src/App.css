@@ -95,7 +95,7 @@ nav.navbar.scrolled {
   background-color: #121212;
 }
 nav.navbar a.navbar-brand {
-    width: 15%;
+    width: 110px;
     filter: invert(100%);
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
@@ -158,11 +158,15 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
+  padding: 130px 0 100px 0;
   background-image: url('./assets/img/bnw-banner.jpg');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.banner img{
+  width: 320px;
+  border-radius: 600px;
 }
 .banner .tagline {
   font-weight: 700;
@@ -176,7 +180,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   display: inline-block;
 }
 .banner h1 {
-  font-size: 65px;
+  font-size: 45px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
@@ -462,7 +466,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 
 /************ Footer Css ************/
 .footer {
-  padding: 50px 150px 50px 130px;
+  padding-top: 30px;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -470,7 +474,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 
 .footer p{
   color: #B8B8B8;
-  width: 90%;
+  width: 92%;
   text-align: right;
   font-style: italic;
 }
