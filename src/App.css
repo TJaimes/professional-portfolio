@@ -243,7 +243,10 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 .skill {
   padding: 0 0 100px 0;
   position: relative;
-  background-color: #b3c5d7
+  background-color: #b3c5d7;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: -60px;
 }
 
 .skill-bx {
@@ -256,9 +259,10 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 .skill h2 {
 	font-size: 45px;
 	font-weight: 700;
+  color: black;
 }
 .skill p {
-    color: #B8B8B8;
+    color: black;
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
@@ -266,8 +270,9 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 }
 
 .skill-slider {
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
+  margin: 20px auto;
+  color: black;
 }
 
 .skill-slider .item img {
@@ -281,6 +286,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   position: relative;
   background-color: black;
 }
+
 .project h2 {
 	font-size: 45px;
 	font-weight: 700;
