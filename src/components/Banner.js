@@ -1,7 +1,6 @@
 import {useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap"
 import meHeader from "../assets/img/meBanner.png";
-import headerPrueba from "../assets/img/imgPrueba.png";
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
@@ -50,7 +49,7 @@ export const Banner = () => {
             <Container>
                 <Row className="aligh-items-center">
                     <div>
-                        <img src={headerPrueba} alt="Header Img"/>
+                        <img src={meHeader} alt="Header Img"/>
                         <h1>Hi! I'm Tairi Jaimes</h1>
                         <h1><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
                         </div>
