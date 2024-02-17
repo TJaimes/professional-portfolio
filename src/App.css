@@ -112,7 +112,6 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 }
 
 .social-icon {
-    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -130,6 +129,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     line-height: 1;
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
+
 .social-icon a::before {
     content: "";
     width: 42px;
@@ -139,7 +139,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     border-radius: 50%;
     transform: scale(0);
 	transition: 0.3s ease-in-out;
-  z-index: -1;
+  color: black;
 }
 
 .social-icon a:hover::before {
@@ -151,75 +151,53 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 	transition: 0.3s ease-in-out;
   align-self: center;
 }
+
 .social-icon a:hover img {
 	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
-
 /************ Banner Css ************/
 .banner {
-  margin-top: 0;
-  padding: 260px 0 100px 0;
+  padding: 260px 0px;
   background-image: url('./assets/img/bnw-banner.jpg');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
-.banner .tagline {
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(201, 203, 163) -5.91%, rgba(114, 61, 70) 111.58%);
-  border: 1px solid rgba(201, 203, 163);
-  border-radius: 10px;
-  font-size: 20px;
-  margin-bottom: 16px;
-  display: inline-block;
+
+.banner a{
+  text-decoration: none;
 }
-.banner h1 {
-  font-size: 65px;
+
+.header-container {
+  padding-top: 130px;
+}
+
+.header-icon {
+  padding-top: 10px;
+  display: flex;
+}
+
+.header h1 {
+  font-size: 70px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
   margin-bottom: 20px;
   display: block;
-  color: #000;
-}
-.banner p {
-  color: #B8B8B8;
-  font-size: 18px;
-  letter-spacing: 0.8px;
-  line-height: 1.5em;
-  width: 96%;
-}
-.banner button {
-  color: #fff;
-  font-weight: 700;
-  font-size: 20px;
-  margin-top: 60px;
-  letter-spacing: 0.8px;
-  display: flex;
-  align-items: center;
-}
-.banner button svg {
-  font-size: 25px;
-  margin-left: 10px;
-  transition: 0.3s ease-in-out;
-  line-height: 1;
-}
-.banner button:hover svg {
-  margin-left: 25px;
+  color: #ffff;
 }
 
-.banner div {
-  text-align: center;
-}
-
-.banner img {
-  max-width: 40%;
+.header img {
+  padding-top: 70px;
+  max-width: 70%;
   height: auto;
-  display: block;
-  margin: 10px auto;
+  margin-left: 150px;
 }
+
 @keyframes updown {
     0% {
         transform: translateY(-20px);
@@ -485,7 +463,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 }
 
 .footer button {
-  color: #fff;
+  color: #ffff;
   font-size: 20px;
   margin-top: 10px;
   letter-spacing: 0.8px;
@@ -514,31 +492,44 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   text-decoration: none;
 }
 
-.foot-icon a {
+.footer-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.cv-icon a {
+  position: relative;
   width: 80px;
   color: #ffffff;
   border-radius: 15px;
   font-weight: bold;
+  z-index: 1;
 }
 
-.foot-icon a::before{
+.cv-icon a::before{
+  content: "";
   width: 80px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffff;
   border-radius: 15px;
+  z-index: -1;
 }
 
-.foot-icon a:hover{
+.cv-icon a:hover{
   color: black;
 }
 
-.foot-icon a svg{
+.cv-icon a svg{
   width: 23px;
   height: auto;
   margin-right: 7px;
-  z-index: 1;
   transition:  0.3s ease-in-out;
 }
 
-.foot-icon a:hover svg{
+.cv-icon a:hover svg{
   filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
 
