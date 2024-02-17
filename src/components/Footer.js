@@ -18,10 +18,6 @@ export const Footer = () => {
         document.body.removeChild(link);
     };
 
-    const handleLinkedInClick = () => {
-        window.location.href = 'https://www.linkedin.com/in/dev-tairi-jaimes';
-    };
-
     return (
         <footer className="footer" id="footer">
             <Row className="align-item-center">
@@ -42,8 +38,9 @@ export const Footer = () => {
                 </Col>
 
                 <Col sm={4} className="text-center text-sm-end">
-                        <div className="social-icon">
-                            <div className="foot-icon">
+                    <div className="social-icon">
+                        <div className="footer-icons">
+                            <div className="cv-icon">
                                 <a href="#" onClick={handleDownload}><FileEarmarkArrowDownFill/>CV</a>
                             </div>
                             <a href="https://www.linkedin.com/in/dev-tairi-jaimes" target="_blank" rel="noopener noreferrer">
@@ -56,7 +53,8 @@ export const Footer = () => {
                                 <img src={navIcon3}/>
                             </a>
                         </div>
-                    </Col>
+                    </div>
+                </Col>
             </Row>
             <Row>
                 <p>Developed with React</p>
