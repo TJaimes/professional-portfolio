@@ -1,7 +1,11 @@
 import {useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap"
+import { FileEarmarkArrowDownFill } from "react-bootstrap-icons";
 import meHeader from "../assets/img/meBanner.png";
 import headerPrueba from "../assets/img/imgPrueba.png";
+import navIcon1 from "../assets/img/nav-icon1.svg";
+import navIcon2 from "../assets/img/nav-icon2.svg";
+import navIcon3 from "../assets/img/nav-icon3.svg";
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
@@ -11,6 +15,17 @@ export const Banner = () => {
     const [index, setIndex] = useState(1);
     const toRotate = [ "Web Developer", "Web Full-Stack", "Back-End Developer" ];
     const period = 2000;
+
+    const handleDownload = (e) =>{
+        e.preventDefault();
+
+        const link = document.createElement('a');
+        link.href = process.env.PUBLIC_URL + '/CV-TairiJaimes.pdf';
+        link.download = 'CV-TairiJaimes.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
 
     useEffect(() => {
         let ticker = setInterval(() => {
@@ -47,15 +62,37 @@ export const Banner = () => {
 
     return (
         <section className="banner" id="home">
-            <Container>
-                <Row className="aligh-items-center">
-                    <div>
-                        <img src={headerPrueba} alt="Header Img"/>
-                        <h1>Hi! I'm Tairi Jaimes</h1>
-                        <h1><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+            <Row>
+                <Col sm={6} md={6}>
+                    <div className="header-container">
+                        <div className="header">
+                            <h1>Hi! I'm Tairi Jaimes</h1>
+                            <h1><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
                         </div>
-                </Row>
-            </Container>
+                        <div className="social-icon">
+                            <div className="header-icon">
+                                <div className="cv-icon">
+                                    <a href="#" onClick={handleDownload}><FileEarmarkArrowDownFill/>CV</a>
+                                </div>
+                                <a href="https://www.linkedin.com/in/dev-tairi-jaimes" target="_blank" rel="noopener noreferrer">
+                                    <img src={navIcon1}/>
+                                </a>
+                                <a href="https://www.facebook.com/tairiraquel.jaimessalazar" target="_blank" rel="noopener noreferrer">
+                                    <img src={navIcon2}/>
+                                </a>
+                                <a href="https://www.instagram.com/z_jms/" target="_blank" rel="noopener noreferrer">
+                                    <img src={navIcon3}/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </Col>
+                <Col sm={6} md={6}>
+                    <div className="header">
+                        <img src={headerPrueba} alt="Header Img"/>
+                    </div>
+                </Col>
+            </Row>
         </section>
     )
 }
