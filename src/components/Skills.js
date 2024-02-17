@@ -4,11 +4,12 @@ import "react-multi-carousel/lib/styles.css"
 import jsLogo from "../assets/img/jsLogo.png"
 import csharpLogo from "../assets/img/csharpLogo.png"
 import javaLogo from "../assets/img/javaLogo.png"
-import meter70Int from "../assets/img/meter70Int.png"
-import meter90Adv from "../assets/img/meter90Adv.png"
-import meter57Int from "../assets/img/meter57Int.png"
-import meter45Bas from "../assets/img/meter45Basic.png"
-import colorSharp from "../assets/img/color-sharp.png"
+import bootstrapLogo from "../assets/img/bootstrapLogo.jpg";
+import cssLogo from "../assets/img/cssLogo.png";
+import entityLogo from "../assets/img/entityLogo.png";
+import gitLogo from "../assets/img/gitLogo.png";
+import htmlLogo from "../assets/img/htmlLogo.png";
+import reactLogo from "../assets/img/reactNativeLogo.png";
 
 export const Skills = () => {
     const responsive = {
@@ -22,7 +23,7 @@ export const Skills = () => {
         },
         tablet: {
             breakpoint: { max: 1024, min: 454 },
-            items: 2
+            items: 3
         },
         mobile: {
             breakpoint: { max: 464, min: 0 },
@@ -40,39 +41,33 @@ export const Skills = () => {
                         <Carousel responsive={responsive} infinite={true} className="skill-slider">
 
                             <div className="item">
-                                <img src={csharpLogo} alt="Image Item1" />
+                                <img src={csharpLogo} alt="C#" />
                             </div>
                             <div className="item">
-                                <img src={jsLogo} alt="Image Item2" />
+                                <img src={jsLogo} alt="JavaScript" />
                             </div>
                             <div className="item">
-                                <img src={javaLogo} alt="Image Item3" />
+                                <img src={javaLogo} alt="Java" />
                             </div>
                             <div className="item">
-                                <img src={meter57Int} alt="Image Item3" />
-                                <h5>CSS</h5>
+                                <img src={cssLogo} alt="CSS5" />
                             </div>
                             <div className="item">
-                                <img src={meter57Int} alt="Image Item3" />
-                                <h5>HTML</h5>
+                                <img src={htmlLogo} alt="HTML3" />
                             </div>
 
                             <div className="item">
-                                <img src={meter57Int} alt="Image Item3" />
-                                <h5>Entity Framework</h5>
+                                <img src={entityLogo} alt="Entity Framework" />
                             </div>
                             <div className="item">
-                                <img src={meter70Int} alt="Image Item2" />
-                                <h5>Bootstrap</h5>
+                                <img src={bootstrapLogo} alt="Bootstrap" />
                             </div>
 
                             <div className="item">
-                                <img src={meter45Bas} alt="Image Item2" />
-                                <h5>React Native</h5>
+                                <img src={reactLogo} alt="React" />
                             </div>
                             <div className="item">
-                                <img src={meter70Int} alt="Image Item2" />
-                                <h5>Git - version control</h5>
+                                <img src={gitLogo} alt="Git" />
                             </div>
                         </Carousel>
                     </Col>
